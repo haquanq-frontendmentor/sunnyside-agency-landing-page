@@ -1,0 +1,18 @@
+.header {
+    position: relative;
+    width: var(--container-width);
+    margin: 0 auto;
+    color: var(--color-neutral-100);
+
+    &__container {
+        background-image: url("../assets/images/mobile/image-header.jpg");
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: clamp(33.75rem, 28.0282rem + 24.4131vw, 50rem);
+
+        @media (--tablet) {
+            background-image: url("../assets/images/desktop/image-header.jpg");
+        }
+    }
+}

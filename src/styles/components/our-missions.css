@@ -1,0 +1,97 @@
+.our-missions {
+    display: grid;
+
+    @media (--tablet) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        & > *:nth-child(3) {
+            grid-column: 1 / 2;
+            grid-row: 1;
+        }
+    }
+
+    &__picture {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__article {
+        padding-inline: 1.5rem;
+        height: clamp(28rem, 24.6549rem + 14.2723vw, 37.5rem);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+        @media (--tablet) {
+            padding-inline: clamp(2.5rem, 0.6872rem + 7.7348vw, 6.875rem);
+            text-align: start;
+            align-items: start;
+        }
+    }
+
+    &__title {
+        font-size: clamp(2rem, 1.8239rem + 0.7512vw, 2.5rem);
+        line-height: clamp(2.5rem, 2.3019rem + 0.8451vw, 3.0625rem);
+        margin-block-end: clamp(1.5rem, 1.3239rem + 0.7512vw, 2rem);
+        letter-spacing: 0.01em;
+    }
+
+    &__description {
+        margin-block-end: clamp(2.25rem, 2.0739rem + 0.7512vw, 2.75rem);
+        letter-spacing: -0.01em;
+        line-height: 1.875rem;
+        max-width: 45ch;
+    }
+
+    &__learn-more {
+        position: relative;
+        display: block;
+        width: fit-content;
+        text-transform: uppercase;
+        color: var(--color-neutral-500);
+        font-weight: var(--font-black);
+        font-family: var(--font-secondary);
+        line-height: 1.5rem;
+        transition: transform 250ms ease;
+
+        @media (prefers-reduced-motion: reduce) {
+            transition: none;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            height: 0.625rem;
+            left: -0.5rem;
+            right: -0.5rem;
+            border-radius: var(--rounded-full);
+            bottom: 0;
+            z-index: -1;
+            transition: height 250ms ease;
+
+            @media (prefers-reduced-motion: reduce) {
+                transition: none;
+            }
+        }
+
+        &--yellow::after {
+            background-color: var(--color-yellow-300);
+        }
+
+        &--red::after {
+            background-color: var(--color-red-300);
+        }
+
+        @media (hover: hover) {
+            &:hover::after {
+                height: 100%;
+            }
+        }
+    }
+}

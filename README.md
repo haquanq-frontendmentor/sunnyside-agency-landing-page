@@ -1,43 +1,90 @@
-## Frontend Mentor - Insure landing page solution
+## Frontend Mentor - Sunnyside Agency Landing Page Solution
 
-This is a solution to the [Coding bootcamp testimonials slider challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/coding-bootcamp-testimonials-slider-4FNyLA8JL). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-### The challenge
+<p>
+  <a href="">
+    <img
+      alt="Solution post"
+      src="https://img.shields.io/badge/Frontendmentor-blue?label=Solution%20on"
+    /></a>
+  <a href="https://haquanq-frontendmentor.github.io/sunnyside-agency-landing-page/">
+    <img
+      alt="Live demo"
+      src="https://img.shields.io/badge/Demo-teal?label=Live"
+    /></a>
+  <a href="./LICENSE"
+    ><img
+      allt="MIT License"
+      src="https://img.shields.io/badge/MIT-blue?label=license"
+  /></a>
+</p>
 
-- No access to design files, attempt pixel-perfect
+## Table of Contents
 
-Users should be able to:
+- [Project Overview](#sunrise-project-overview)
+- [Tech Stack and Approach](#stars-tech-stack-and-approach)
+- [Local Development](#leaves-local-development)
+- [Deployment](#maple_leaf-deployment)
 
-- View the optimal layout for the component depending on their device's screen size
-- Navigate the slider using either their mouse/trackpad or keyboard
+## :sunrise: Project Overview
 
-### Solution
+### Challenge Requirements
 
-- Built with: `HTML` `CSS` `JS`
-- Mobile-first workflow
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
 
-![](./.docs/design/desktop-design-slide-1.jpg)
+### Status
 
-## Working in `fm-coding-bootcamp-testimonials-slider` repository
+Accessibility
 
-### Clone this project to your machine
+- [x] Responsive accross different screen sizes
+- [x] Interactive elements have clear focus indicator
 
-Make sure you have Git installed in your system, open new terminal, run the following command:
+### Preview (Desktop)
+
+![](./docs/design/desktop-design.jpg)
+
+## :stars: Tech Stack and Approach
+
+### Built With
+
+- **HTML5** – Semantic structure
+- **CSS Grid & Flexbox** – Layout
+- **PostCSS** – Nested rules, custom media queries, future CSS features, minification
+- **Stylelint** – CSS linting, code style consistency
+- **TypeScript** - Interactivity and application logic
+- **Vite** - Fast development server, production build and easy configuration
+
+### Approach
+
+- Mobile-first workflow for better performance on smaller devices
+- Accessibility guided by [ARIA Authoring Practices Guide (APG)](https://www.w3.org/WAI/ARIA/apg/)
+
+## :leaves: Local Development
+
+### Prerequisites
+
+Install the following:
+
+- Git (latest version)
+- Node.js (latest LTS recommended)
+- pnpm (latest version)
+
+### Setup
 
 ```
-git clone https://github.com/haquanq/fm-coding-bootcamp-testimonials-slider.git
+git clone https://github.com/haquanq-frontendmentor/sunnyside-agency-landing-page.git
+cd sunnyside-agency-landing-page
+pnpm install
 ```
 
-Then, run `npm install` to install all dependencies.
+### Start Development Server
 
 ```
-npm install
+pnpm dev
 ```
 
-### Development workflow
+## :maple_leaf: Deployment
 
-In terminal, run `npm run dev` to start development server:
-
-```
-npm run dev
-```
+Deployed to Github Pages via Github Actions (manually triggered).

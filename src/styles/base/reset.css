@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    line-height: var(--leading-none);
+    font-family: var(--font-primary);
+    font-weight: var(--font-semi-bold);
+    color: var(--color-neutral-400);
+    font-size: var(--text-md);
+    background-color: #fffbf8;
+    -webkit-font-smoothing: antialiased;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    font: inherit;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    font: inherit;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-secondary);
+    font-weight: var(--font-black);
+    color: var(--color-neutral-500);
+    overflow-wrap: break-word;
+    text-wrap: balance;
+}
+
+p {
+    font-size: var(--text-md);
+    font-weight: var(--font-semi-bold);
+    overflow-wrap: break-word;
+    text-wrap: pretty;
+}
+
+@supports selector(:focus-visible) {
+    a:focus,
+    button:focus {
+        outline: 0;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+        outline-width: var(--focus-outline-width);
+        outline-offset: var(--focus-outline-offset);
+        outline-style: var(--focus-outline-style);
+        outline-color: var(--focus-outline-color);
+    }
+}

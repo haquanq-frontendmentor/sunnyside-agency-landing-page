@@ -1,0 +1,70 @@
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: clamp(5.625rem, 3.8122rem + 7.7348vw, 10rem);
+
+    &__title {
+        text-transform: uppercase;
+        letter-spacing: 0.27em;
+        font-size: var(--text-base);
+        text-align: center;
+        margin-block-end: clamp(4rem, 3.1713rem + 3.5359vw, 6rem);
+
+        @media (--tablet) {
+            font-size: var(--text-lg);
+        }
+    }
+
+    &__list {
+        display: grid;
+        align-items: center;
+        text-align: center;
+        gap: 4rem 2rem;
+        max-width: 69rem;
+
+        @media (--desktop) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+        @media (--tablet) {
+            gap: 3.625rem;
+        }
+    }
+
+    &__avatar {
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: var(--rounded-full);
+    }
+
+    &__quote {
+        line-height: 2rem;
+        max-width: 50ch;
+        margin-block-end: 2rem;
+    }
+
+    &__attribution {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    &__customer-name {
+        font-family: var(--font-secondary);
+        font-weight: var(--font-bold);
+        color: var(--color-neutral-500);
+    }
+
+    &__customer-role {
+        font-size: var(--text-sm);
+        font-weight: var(--font-semi-bold);
+    }
+}

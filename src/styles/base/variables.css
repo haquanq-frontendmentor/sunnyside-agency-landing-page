@@ -1,0 +1,48 @@
+:root {
+    --color-red-300: hsl(7, 99%, 70%);
+
+    --color-yellow-300: hsl(51, 100%, 49%);
+
+    --color-blue-200: hsl(200, 100%, 72%);
+    --color-blue-500: hsl(198, 62%, 26%);
+
+    --color-cyan-300: hsl(167, 44%, 70%);
+    --color-cyan-500: hsl(168, 34%, 41%);
+    --color-cyan-600: hsl(167, 40%, 24%);
+
+    --color-neutral-500: hsl(212, 27%, 19%);
+    --color-neutral-400: hsl(213, 9%, 39%);
+    --color-neutral-300: hsl(232, 10%, 55%);
+    --color-neutral-200: hsl(210, 4%, 67%);
+    --color-neutral-100: hsl(0, 0%, 100%);
+
+    --font-primary: "Barlow", system-ui, sans-serif;
+    --font-secondary: "Fraunces", serif;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+    --font-black: 900;
+
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-md: 1.125rem;
+    --text-lg: 1.25rem;
+    --text-2lg: 1.5rem;
+    --text-3lg: 1.75rem;
+    --text-xl: 2rem;
+    --text-2xl: 2.25rem;
+    --text-3xl: 2.5rem;
+
+    --leading-none: 1;
+
+    --rounded-full: 9999px;
+
+    --focus-outline-width: 3px;
+    --focus-outline-offset: 3px;
+    --focus-outline-style: dashed;
+    --focus-outline-color: var(--color-cyan-600);
+}
+
+@custom-media --tablet (min-width: 52em);
+@custom-media --laptop (min-width: 68em);
+@custom-media --desktop (min-width: 76em);

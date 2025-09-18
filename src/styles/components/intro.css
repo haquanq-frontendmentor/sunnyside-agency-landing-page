@@ -1,0 +1,14 @@
+.intro {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block-start: clamp(3rem, 1.7569rem + 5.3039vw, 6rem);
+
+    &__title {
+        color: var(--color-neutral-100);
+        text-transform: uppercase;
+        font-size: clamp(2.5rem, 2.1479rem + 1.5025vw, 3.5rem);
+        margin-block-end: clamp(3rem, 1.7569rem + 5.3039vw, 6rem);
+    }
+}

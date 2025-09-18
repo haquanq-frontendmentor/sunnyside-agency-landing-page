@@ -1,0 +1,14 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @media (--tablet) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    &__picture {
+        img {
+            width: 100%;
+        }
+    }
+}
