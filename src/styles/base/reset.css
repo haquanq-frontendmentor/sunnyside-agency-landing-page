@@ -11,7 +11,7 @@ body {
     font-weight: var(--font-semi-bold);
     color: var(--color-neutral-400);
     font-size: var(--text-md);
-    background-color: #fffbf8;
+    background-color: var(--color-neutral-100);
     -webkit-font-smoothing: antialiased;
 }
 
