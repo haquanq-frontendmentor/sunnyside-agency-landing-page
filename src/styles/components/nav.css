@@ -117,7 +117,7 @@
         }
     }
 
-    &__item:not(:last-child) &__link {
+    &__link {
         position: relative;
 
         &::after {
@@ -157,6 +157,10 @@
         font-size: var(--text-base);
         text-transform: uppercase;
         transition: background-color 250ms ease;
+
+        &::after {
+            display: none;
+        }
 
         @media (prefers-reduced-motion: reduce) {
             transition: none;
